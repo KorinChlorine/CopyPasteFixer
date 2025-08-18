@@ -98,7 +98,7 @@ public class Main extends Application {
 
         Scene scene = new Scene(layout, 900, 550);
         stage.setScene(scene);
-        stage.setTitle("Text Fixer");
+        stage.setTitle("CopyPasteFixer");
         stage.show();
 
         applyFont(styledText, false, false);
