@@ -41,7 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CopyPasteFixer.executor": "Debug",
+    "Application.CopyPasteFixer.executor": "Run",
     "Application.JavaFx.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Unnamed.executor": "Run",
