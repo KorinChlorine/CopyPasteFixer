@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Fixed Buttons" />
+    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Improved UI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CopyPasteFixer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CopyPasteFixer/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,11 +88,20 @@
       <option name="project" value="LOCAL" />
       <updated>1755482805270</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved UI">
+      <option name="closed" value="true" />
+      <created>1755483599411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755483599411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Buttons" />
+    <MESSAGE value="Improved UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved UI" />
   </component>
 </project>
