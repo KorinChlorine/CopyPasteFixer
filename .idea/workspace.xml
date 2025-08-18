@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Fixed some stuff">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/CopyPasteFixer_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CopyPasteFixer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CopyPasteFixer/CopyPasteFixer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CopyPasteFixer/CopyPasteFixer.jar" afterDir="false" />
-    </list>
+    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755485023097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Final">
+      <option name="closed" value="true" />
+      <created>1755489347279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755489347280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +141,7 @@
     <MESSAGE value="Improved UI" />
     <MESSAGE value="Added new features" />
     <MESSAGE value="Fixed some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some stuff" />
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
 </project>

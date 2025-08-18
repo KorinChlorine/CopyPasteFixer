@@ -15,13 +15,15 @@ import javafx.stage.Stage;
 public class Main extends Application {
     private static void applyFont(Text t, boolean bold, boolean italic) {
         Font f = t.getFont();
-        t.setFont(Font.font(f.getFamily(), bold ? FontWeight.BOLD : FontWeight.NORMAL, italic ? FontPosture.ITALIC : FontPosture.REGULAR, f.getSize()));
+        t.setFont(Font.font(f.getFamily(),
+                bold ? FontWeight.BOLD : FontWeight.NORMAL,
+                italic ? FontPosture.ITALIC : FontPosture.REGULAR,
+                f.getSize()));
     }
 
     @Override
     public void start(Stage stage) {
         TextArea input = new TextArea();
-
         Text styledText = new Text();
         TextFlow outputFlow = new TextFlow(styledText);
         ScrollPane outputPane = new ScrollPane(outputFlow);
@@ -32,16 +34,29 @@ public class Main extends Application {
         ToggleButton boldButton = new ToggleButton("Bold");
         ToggleButton italicButton = new ToggleButton("Italic");
         CheckBox alwaysOnTop = new CheckBox("Always on Top");
+        CheckBox autoBullet = new CheckBox("Auto Bullet");
 
         Label reminder = new Label("✔ Fixed text is copied to clipboard automatically");
         reminder.setStyle("-fx-font-size: 11px; -fx-text-fill: gray;");
 
-        Runnable fixAndCopy = () -> {
+        Runnable updateOutput = () -> {
             String text = input.getText();
-            String fixed = text.replaceAll("\\s*\\n\\s*", " ").replaceAll("\\s+", " ").trim();
-            styledText.setText(fixed);
+            String result;
+            if (autoBullet.isSelected()) {
+                String[] lines = text.split("\\r?\\n");
+                StringBuilder bulleted = new StringBuilder();
+                for (String line : lines) {
+                    if (!line.trim().isEmpty()) {
+                        bulleted.append("• ").append(line.trim()).append("\n");
+                    }
+                }
+                result = bulleted.toString().trim();
+            } else {
+                result = text.replaceAll("\\s*\\n\\s*", " ").replaceAll("\\s+", " ").trim();
+            }
+            styledText.setText(result);
             ClipboardContent content = new ClipboardContent();
-            content.putString(fixed);
+            content.putString(result);
             Clipboard.getSystemClipboard().setContent(content);
         };
 
@@ -50,19 +65,21 @@ public class Main extends Application {
             content.putString(styledText.getText());
             Clipboard.getSystemClipboard().setContent(content);
         });
+
         clearButton.setOnAction(e -> {
             input.clear();
             styledText.setText("");
         });
 
-        boldButton.selectedProperty().addListener((obs, was, is) -> applyFont(styledText, is, italicButton.isSelected()));
-        italicButton.selectedProperty().addListener((obs, was, is) -> applyFont(styledText, boldButton.isSelected(), is));
-
+        boldButton.selectedProperty().addListener((obs, was, is) ->
+                applyFont(styledText, is, italicButton.isSelected()));
+        italicButton.selectedProperty().addListener((obs, was, is) ->
+                applyFont(styledText, boldButton.isSelected(), is));
         alwaysOnTop.selectedProperty().addListener((obs, was, is) -> stage.setAlwaysOnTop(is));
+        input.textProperty().addListener((obs, old, val) -> updateOutput.run());
+        autoBullet.selectedProperty().addListener((obs, old, val) -> updateOutput.run());
 
-        input.textProperty().addListener((obs, old, val) -> fixAndCopy.run());
-
-        HBox controls = new HBox(10, copyButton, clearButton, boldButton, italicButton, alwaysOnTop);
+        HBox controls = new HBox(10, copyButton, clearButton, boldButton, italicButton, alwaysOnTop, autoBullet);
 
         BorderPane bottomBar = new BorderPane();
         bottomBar.setLeft(controls);
