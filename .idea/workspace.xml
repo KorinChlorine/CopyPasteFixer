@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Added new features">
-      <change beforePath="$PROJECT_DIR$/out/production/CopyPasteFixer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CopyPasteFixer/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="17031606-848f-4cf0-84ed-9ec514ee3d25" name="Changes" comment="Fixed some stuff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +52,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/KorinCorin/IdeaProjects/CopyPasteFixer/src/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -103,13 +100,22 @@
       <option name="project" value="LOCAL" />
       <updated>1755484229125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed some stuff">
+      <option name="closed" value="true" />
+      <created>1755484533965</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755484533965</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Buttons" />
     <MESSAGE value="Improved UI" />
     <MESSAGE value="Added new features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new features" />
+    <MESSAGE value="Fixed some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some stuff" />
   </component>
 </project>
