@@ -1,4 +1,4 @@
-To access-- install JavaFX first
+To access the code-- install JavaFX first
 
 Step 1: Download JavaFX Go to this website: https://gluonhq.com/products/javafx/
 
